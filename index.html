@@ -2,33 +2,90 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Dan Goodrick's Projects</title>
+    <title>Dan Goodrick Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: #0074cc;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        video {
+            max-width: 100%;
+        }
+
+        .container {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Dan Goodrick's Project Showcase</h1>
-    <p>Computer Vision and Web Development</p>
+    <div class="container">
+        <h1>Welcome to Dan Goodrick's Project Showcase</h1>
+        <p>Computer Vision and Web Development</p>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <a href="#" onclick="loadVideo('project1_video')">Project 1 Video</a>
-            <div id="project1" style="display: none;">
-                <video controls>
-                    <source src="videos/BOH.mp4" type="video/mp4">
-                    <p>Your browser does not support the video tag.</p>
-                </video>
-            </div>
-        </li>
-        <li>
-            <a href="#" onclick="loadVideo('project2_video')">Project 2 Video</a>
-            <div id="project2" style="display: none;">
-                <video controls>
-                    <source src="videos/Amavi.mp4" type="video/mp4">
-                    <p>Your browser does not support the video tag.</p>
-                </video>
-            </div>
-        </li>
-    </ul>
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <a href="#" onclick="loadVideo('project1_video')">Project 1 Video</a>
+                <div id="project1" style="display: none;">
+                    <video controls>
+                        <source src="videos/BOH.mp4" type="video/mp4">
+                        <p>Your browser does not support the video tag.</p>
+                    </video>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="loadVideo('project2_video')">Project 2 Video</a>
+                <div id="project2" style="display: none;">
+                    <video controls>
+                        <source src="videos/Amavi.mp4" type="video/mp4">
+                        <p>Your browser does not support the video tag.</p>
+                    </video>
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <script>
         function loadVideo(videoId) {
@@ -39,6 +96,6 @@
         }
     </script>
 
-    <p>Feel free to explore the project videos above. If you have any questions or would like to get in touch, you can reach me at dan.goodrick@example.com.</p>
+    <p>Feel free to explore the project videos above. If you have any questions or would like to get in touch, you can reach me at goodrickd@gmail.com.</p>
 </body>
 </html>
