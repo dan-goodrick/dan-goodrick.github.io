@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dan Goodrick's Projects</title>
+</head>
+<body>
+    <h1>Welcome to Dan Goodrick's Project Showcase</h1>
+    <p>Computer Vision and Web Development</p>
+
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <a href="#" onclick="loadVideo('project1_video')">Project 1 Video</a>
+            <div id="project1" style="display: none;">
+                <video controls>
+                    <source src="videos/BOH.mp4" type="video/mp4">
+                    <p>Your browser does not support the video tag.</p>
+                </video>
+            </div>
+        </li>
+        <li>
+            <a href="#" onclick="loadVideo('project2_video')">Project 2 Video</a>
+            <div id="project2" style="display: none;">
+                <video controls>
+                    <source src="videos/Amavi.mp4" type="video/mp4">
+                    <p>Your browser does not support the video tag.</p>
+                </video>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+        function loadVideo(videoId) {
+            var videoDiv = document.getElementById(videoId);
+            if (videoDiv) {
+                videoDiv.style.display = 'block';
+            }
+        }
+    </script>
+
+    <p>Feel free to explore the project videos above. If you have any questions or would like to get in touch, you can reach me at dan.goodrick@example.com.</p>
+</body>
+</html>
